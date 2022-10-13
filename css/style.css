@@ -29,6 +29,7 @@ header{
 
 .btn_blue{
     background-color: #2d64e6;
+    color: white;
 }
 .returnal-logo{
     width: 400px;
@@ -45,6 +46,7 @@ header{
 .section-title{
     font-size: 50px;
     letter-spacing: 3px;
+    margin: 1.5rem 0;
 }
 
 .section-subtitle{
@@ -81,4 +83,16 @@ header{
 
 .ittakestwo-logo{
     width: 90%;
+}
+
+#new-game{
+    background-color: #1f1f1f;
+}
+
+#psplus{
+    background-color: #bebcbb;
+}
+
+.btn_white{
+    background-color: rgba(255, 255, 255, .5);
 }
