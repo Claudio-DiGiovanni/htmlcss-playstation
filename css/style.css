@@ -1,0 +1,17 @@
+header{
+    background-color: black;
+}
+
+.btn{
+    border-radius: 3rem;
+}
+
+.btn_black{
+    background-color: black;
+    color: white;
+}
+
+.search{
+    font-size: 25px;
+    color: black;
+}
