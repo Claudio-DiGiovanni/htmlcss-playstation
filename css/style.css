@@ -4,11 +4,24 @@ header{
 
 .btn{
     border-radius: 3rem;
+	
 }
+
+
 
 .btn_black{
     background-color: black;
     color: white;
+    border: 3px solid white;
+	overflow: hidden;
+}
+
+
+.btn_black:hover {
+    box-shadow: 0 0 0 2px black;
+    background-color: black;
+    color: white;
+    outline: none;
 }
 
 .search{
@@ -25,6 +38,15 @@ header{
 
 .btn_red{
     background-color: #cd3d0f;
+    color: white;
+    border: 3px solid transparent;
+	overflow: hidden;
+}
+
+.btn_red:hover{
+    border: 3px solid blue;
+    background-color: #cd3d0f;
+    color: white;
 }
 
 .btn_blue{
@@ -35,8 +57,26 @@ header{
     width: 400px;
 }
 
-.card_game{
-    border-radius: 2rem;
+.card_game {
+	padding: 3px;
+	border: 3px solid transparent;
+	border-radius: 1rem;
+	overflow: hidden;
+	transition: transform .6s;
+}
+
+.card_game.active {
+	border: 3px solid #2d64e6;
+}
+
+.card_game:hover {
+	border: 3px solid #2d64e6;
+	transform: translateY(-20px);
+	cursor: pointer;
+}
+
+.card_game img {
+	border-radius: calc(1rem - 6px);
 }
 
 .text-blue{
@@ -104,3 +144,41 @@ header{
 footer{
     background-color: #00439c;
 }
+.dropdown{
+    position: static;
+}
+
+.dropdown-menu{
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    border: none;
+    border-radius: 0;
+}
+.dropdown-menu.show{
+    margin-top: 0;
+}
+
+.dropdown-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+
+.nav-link i{
+    transition: .5s;
+}
+
+.nav-link:hover i {
+    transform: rotate(180deg);
+}
+
+.point .dropdown-item::before{
+    content: '\f192';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #00439c;
+    margin-right: 1rem;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
